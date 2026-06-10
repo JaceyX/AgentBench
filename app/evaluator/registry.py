@@ -182,9 +182,17 @@ class EfficiencyGrader(Grader):
     """
 
     def score(self, answer: str, task: Any, trace: Any = None) -> float:
-        if trace is None or not hasattr(trace, "latency_ms") or not getattr(task, "timeout_seconds", None):
+        # Trace may be a dict (from API JSON) or a dataclass (in-process). Support both.
+        if trace is None:
             return 0.5  # neutral if we have no signal
-        used = trace.latency_ms / (task.timeout_seconds * 1000.0)
+        if isinstance(trace, dict):
+            latency_ms = trace.get("latency_ms")
+        else:
+            latency_ms = getattr(trace, "latency_ms", None)
+        timeout_s = getattr(task, "timeout_seconds", None)
+        if latency_ms is None or not timeout_s:
+            return 0.5
+        used = latency_ms / (timeout_s * 1000.0)
         # Linear: used=0 -> 1.0, used>=1 -> 0.0
         return max(0.0, 1.0 - used)
 
@@ -197,9 +205,16 @@ class ToolAccuracyGrader(Grader):
     """
 
     def score(self, answer: str, task: Any, trace: Any = None) -> float:
-        if trace is None or not hasattr(trace, "actual_tools"):
+        if trace is None:
             return 0.0
-        return 1.0 if task.expected_tool in (trace.actual_tools or []) else 0.0
+        # Trace may be a dict (from API JSON) or a dataclass (in-process). Support both.
+        # Bug history: hasattr(dict_instance, "anything") is always False on dicts,
+        # so the original hasattr() check silently returned 0.0 for API traces.
+        if isinstance(trace, dict):
+            actual = trace.get("actual_tools") or []
+        else:
+            actual = getattr(trace, "actual_tools", None) or []
+        return 1.0 if task.expected_tool in actual else 0.0
 
 
 __all__ = [
