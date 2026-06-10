@@ -1,0 +1,70 @@
+========================================================================
+math23k_004 - 详细分析
+========================================================================
+
+--- 原题 (来自 benchmark.jsonl) ---
+  id          : math23k_004
+  task_type   : calculator
+  expected_tool: calculator_tool
+  query       : 把(8/9)米长的绳子平均剪成4段，每段长多少米．
+  expected    : ['((2)/(9))']
+
+--- 多 trial 汇总 (3 次重复执行) ---
+  pass_rate   : 0.0  (0/3)
+  pass@k      : False
+  ci (Wilson) : [0.0, 0.5615]
+  tool_acc    : 1.0
+  latency     : p50=3.0ms  p95=3.0ms
+
+--- 各 grader 均分 ---
+  efficiency           = 0.5
+  exact_match          = 0.0
+  keyword_match        = 0.0
+  llm_judge            = 0.0
+  numeric_tolerance    = 0.8889
+  tool_accuracy        = 0.0
+
+--- 单次 trial 详情 (3 次都完全一致 -> 这是确定性 bug) ---
+  trial 1:
+    actual_tools   : ['calculator_tool']
+    final_answer   : 根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)
+    grader_scores  :
+      exact_match          = 0.0
+      keyword_match        = 0.0
+      numeric_tolerance    = 0.8888888888888888
+      llm_judge            = 0.0
+      efficiency           = 0.5
+      tool_accuracy        = 0.0
+
+  trial 2:
+    actual_tools   : ['calculator_tool']
+    final_answer   : 根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)
+    grader_scores  :
+      exact_match          = 0.0
+      keyword_match        = 0.0
+      numeric_tolerance    = 0.8888888888888888
+      llm_judge            = 0.0
+      efficiency           = 0.5
+      tool_accuracy        = 0.0
+
+  trial 3:
+    actual_tools   : ['calculator_tool']
+    final_answer   : 根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)
+    grader_scores  :
+      exact_match          = 0.0
+      keyword_match        = 0.0
+      numeric_tolerance    = 0.8888888888888888
+      llm_judge            = 0.0
+      efficiency           = 0.5
+      tool_accuracy        = 0.0
+
+--- 诊断结论 ---
+  1. 路由正确 (calculator_tool), tool_acc=1.0
+  2. 失败发生在 calculator_tool 的 AST 求值阶段
+  3. 错误信息: invalid character U+FF0F (全角斜杠 "/")
+     3 次 trial 完全一致 -> 确定性 bug, 不是抖动
+  4. numeric_tolerance 给 0.889 的部分分:
+     题目是关于 2/9 的平方根, 答案关键词是 ((2)/(9))
+     agent 返回的数字中包含了与 2/9 接近的数值,
+     所以 partial credit 接近满分
+  5. fix 方向: 在 calculator 解析前先做全角 -> 半角归一化
