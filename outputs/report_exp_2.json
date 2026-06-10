@@ -1,0 +1,1157 @@
+{
+  "experiment": {
+    "id": 2,
+    "name": "smoke_test",
+    "prompt_version": "v1",
+    "model_name": "mock-agent"
+  },
+  "summary": {
+    "total_cases": 30,
+    "success_count": 30,
+    "success_rate": 1.0,
+    "avg_latency_ms": 2.73,
+    "avg_tool_accuracy": 1.0
+  },
+  "details": [
+    {
+      "case_id": "case_001",
+      "task_type": "tool_calling",
+      "query": "查询北京今天的天气",
+      "expected_tool": "weather_tool",
+      "actual_tools": [
+        "weather_tool"
+      ],
+      "final_answer": "根据工具执行结果，北京今天晴，气温20-28℃。",
+      "latency_ms": 27,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "查询北京今天的天气",
+          "output": "根据用户问题选择工具：weather_tool",
+          "tool_name": "weather_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "查询北京今天的天气",
+          "output": "北京今天晴，气温20-28℃。",
+          "tool_name": "weather_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "查询北京今天的天气",
+          "output": "根据工具执行结果，北京今天晴，气温20-28℃。",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_002",
+      "task_type": "tool_calling",
+      "query": "查询上海今天的天气",
+      "expected_tool": "weather_tool",
+      "actual_tools": [
+        "weather_tool"
+      ],
+      "final_answer": "根据工具执行结果，上海今天多云，气温22-29℃。",
+      "latency_ms": 2,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "查询上海今天的天气",
+          "output": "根据用户问题选择工具：weather_tool",
+          "tool_name": "weather_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "查询上海今天的天气",
+          "output": "上海今天多云，气温22-29℃。",
+          "tool_name": "weather_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "查询上海今天的天气",
+          "output": "根据工具执行结果，上海今天多云，气温22-29℃。",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_003",
+      "task_type": "tool_calling",
+      "query": "查询深圳今天的天气",
+      "expected_tool": "weather_tool",
+      "actual_tools": [
+        "weather_tool"
+      ],
+      "final_answer": "根据工具执行结果，深圳今天有阵雨，气温25-31℃。",
+      "latency_ms": 2,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "查询深圳今天的天气",
+          "output": "根据用户问题选择工具：weather_tool",
+          "tool_name": "weather_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "查询深圳今天的天气",
+          "output": "深圳今天有阵雨，气温25-31℃。",
+          "tool_name": "weather_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "查询深圳今天的天气",
+          "output": "根据工具执行结果，深圳今天有阵雨，气温25-31℃。",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_004",
+      "task_type": "calculator",
+      "query": "计算 128 * 36 的结果",
+      "expected_tool": "calculator_tool",
+      "actual_tools": [
+        "calculator_tool"
+      ],
+      "final_answer": "根据工具执行结果，4608",
+      "latency_ms": 3,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "计算 128 * 36 的结果",
+          "output": "根据用户问题选择工具：calculator_tool",
+          "tool_name": "calculator_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "计算 128 * 36 的结果",
+          "output": "4608",
+          "tool_name": "calculator_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "计算 128 * 36 的结果",
+          "output": "根据工具执行结果，4608",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_005",
+      "task_type": "calculator",
+      "query": "计算 100 + 250 的结果",
+      "expected_tool": "calculator_tool",
+      "actual_tools": [
+        "calculator_tool"
+      ],
+      "final_answer": "根据工具执行结果，350",
+      "latency_ms": 3,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "计算 100 + 250 的结果",
+          "output": "根据用户问题选择工具：calculator_tool",
+          "tool_name": "calculator_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "计算 100 + 250 的结果",
+          "output": "350",
+          "tool_name": "calculator_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "计算 100 + 250 的结果",
+          "output": "根据工具执行结果，350",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_006",
+      "task_type": "calculator",
+      "query": "计算 81 / 9 的结果",
+      "expected_tool": "calculator_tool",
+      "actual_tools": [
+        "calculator_tool"
+      ],
+      "final_answer": "根据工具执行结果，9.0",
+      "latency_ms": 2,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "计算 81 / 9 的结果",
+          "output": "根据用户问题选择工具：calculator_tool",
+          "tool_name": "calculator_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "计算 81 / 9 的结果",
+          "output": "9.0",
+          "tool_name": "calculator_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "计算 81 / 9 的结果",
+          "output": "根据工具执行结果，9.0",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_007",
+      "task_type": "rag_qa",
+      "query": "什么是RAG？",
+      "expected_tool": "search_tool",
+      "actual_tools": [
+        "search_tool"
+      ],
+      "final_answer": "根据工具执行结果，RAG 是 Retrieval-Augmented Generation，即检索增强生成，通过外部知识检索增强大模型回答。",
+      "latency_ms": 2,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "什么是RAG？",
+          "output": "根据用户问题选择工具：search_tool",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "什么是RAG？",
+          "output": "RAG 是 Retrieval-Augmented Generation，即检索增强生成，通过外部知识检索增强大模型回答。",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "什么是RAG？",
+          "output": "根据工具执行结果，RAG 是 Retrieval-Augmented Generation，即检索增强生成，通过外部知识检索增强大模型回答。",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_008",
+      "task_type": "rag_qa",
+      "query": "Agent是什么？",
+      "expected_tool": "search_tool",
+      "actual_tools": [
+        "search_tool"
+      ],
+      "final_answer": "根据工具执行结果，Agent 是具备规划、工具调用、记忆和执行能力的大模型应用系统。",
+      "latency_ms": 3,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "Agent是什么？",
+          "output": "根据用户问题选择工具：search_tool",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "Agent是什么？",
+          "output": "Agent 是具备规划、工具调用、记忆和执行能力的大模型应用系统。",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "Agent是什么？",
+          "output": "根据工具执行结果，Agent 是具备规划、工具调用、记忆和执行能力的大模型应用系统。",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_009",
+      "task_type": "rag_qa",
+      "query": "LangGraph适合做什么？",
+      "expected_tool": "search_tool",
+      "actual_tools": [
+        "search_tool"
+      ],
+      "final_answer": "根据工具执行结果，LangGraph 是用于构建有状态、多步骤 Agent 工作流的框架。",
+      "latency_ms": 1,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "LangGraph适合做什么？",
+          "output": "根据用户问题选择工具：search_tool",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "LangGraph适合做什么？",
+          "output": "LangGraph 是用于构建有状态、多步骤 Agent 工作流的框架。",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "LangGraph适合做什么？",
+          "output": "根据工具执行结果，LangGraph 是用于构建有状态、多步骤 Agent 工作流的框架。",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_010",
+      "task_type": "rag_qa",
+      "query": "LoRA是什么？",
+      "expected_tool": "search_tool",
+      "actual_tools": [
+        "search_tool"
+      ],
+      "final_answer": "根据工具执行结果，LoRA 是一种参数高效微调方法，通过低秩矩阵近似权重更新。",
+      "latency_ms": 2,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "LoRA是什么？",
+          "output": "根据用户问题选择工具：search_tool",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "LoRA是什么？",
+          "output": "LoRA 是一种参数高效微调方法，通过低秩矩阵近似权重更新。",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "LoRA是什么？",
+          "output": "根据工具执行结果，LoRA 是一种参数高效微调方法，通过低秩矩阵近似权重更新。",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_011",
+      "task_type": "tool_calling",
+      "query": "查询北京今天的天气",
+      "expected_tool": "weather_tool",
+      "actual_tools": [
+        "weather_tool"
+      ],
+      "final_answer": "根据工具执行结果，北京今天晴，气温20-28℃。",
+      "latency_ms": 3,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "查询北京今天的天气",
+          "output": "根据用户问题选择工具：weather_tool",
+          "tool_name": "weather_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "查询北京今天的天气",
+          "output": "北京今天晴，气温20-28℃。",
+          "tool_name": "weather_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "查询北京今天的天气",
+          "output": "根据工具执行结果，北京今天晴，气温20-28℃。",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_012",
+      "task_type": "tool_calling",
+      "query": "查询上海今天的天气",
+      "expected_tool": "weather_tool",
+      "actual_tools": [
+        "weather_tool"
+      ],
+      "final_answer": "根据工具执行结果，上海今天多云，气温22-29℃。",
+      "latency_ms": 1,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "查询上海今天的天气",
+          "output": "根据用户问题选择工具：weather_tool",
+          "tool_name": "weather_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "查询上海今天的天气",
+          "output": "上海今天多云，气温22-29℃。",
+          "tool_name": "weather_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "查询上海今天的天气",
+          "output": "根据工具执行结果，上海今天多云，气温22-29℃。",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_013",
+      "task_type": "tool_calling",
+      "query": "查询深圳今天的天气",
+      "expected_tool": "weather_tool",
+      "actual_tools": [
+        "weather_tool"
+      ],
+      "final_answer": "根据工具执行结果，深圳今天有阵雨，气温25-31℃。",
+      "latency_ms": 2,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "查询深圳今天的天气",
+          "output": "根据用户问题选择工具：weather_tool",
+          "tool_name": "weather_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "查询深圳今天的天气",
+          "output": "深圳今天有阵雨，气温25-31℃。",
+          "tool_name": "weather_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "查询深圳今天的天气",
+          "output": "根据工具执行结果，深圳今天有阵雨，气温25-31℃。",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_014",
+      "task_type": "calculator",
+      "query": "计算 128 * 36 的结果",
+      "expected_tool": "calculator_tool",
+      "actual_tools": [
+        "calculator_tool"
+      ],
+      "final_answer": "根据工具执行结果，4608",
+      "latency_ms": 2,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "计算 128 * 36 的结果",
+          "output": "根据用户问题选择工具：calculator_tool",
+          "tool_name": "calculator_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "计算 128 * 36 的结果",
+          "output": "4608",
+          "tool_name": "calculator_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "计算 128 * 36 的结果",
+          "output": "根据工具执行结果，4608",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_015",
+      "task_type": "calculator",
+      "query": "计算 100 + 250 的结果",
+      "expected_tool": "calculator_tool",
+      "actual_tools": [
+        "calculator_tool"
+      ],
+      "final_answer": "根据工具执行结果，350",
+      "latency_ms": 3,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "计算 100 + 250 的结果",
+          "output": "根据用户问题选择工具：calculator_tool",
+          "tool_name": "calculator_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "计算 100 + 250 的结果",
+          "output": "350",
+          "tool_name": "calculator_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "计算 100 + 250 的结果",
+          "output": "根据工具执行结果，350",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_016",
+      "task_type": "calculator",
+      "query": "计算 81 / 9 的结果",
+      "expected_tool": "calculator_tool",
+      "actual_tools": [
+        "calculator_tool"
+      ],
+      "final_answer": "根据工具执行结果，9.0",
+      "latency_ms": 2,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "计算 81 / 9 的结果",
+          "output": "根据用户问题选择工具：calculator_tool",
+          "tool_name": "calculator_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "计算 81 / 9 的结果",
+          "output": "9.0",
+          "tool_name": "calculator_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "计算 81 / 9 的结果",
+          "output": "根据工具执行结果，9.0",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_017",
+      "task_type": "rag_qa",
+      "query": "什么是RAG？",
+      "expected_tool": "search_tool",
+      "actual_tools": [
+        "search_tool"
+      ],
+      "final_answer": "根据工具执行结果，RAG 是 Retrieval-Augmented Generation，即检索增强生成，通过外部知识检索增强大模型回答。",
+      "latency_ms": 2,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "什么是RAG？",
+          "output": "根据用户问题选择工具：search_tool",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "什么是RAG？",
+          "output": "RAG 是 Retrieval-Augmented Generation，即检索增强生成，通过外部知识检索增强大模型回答。",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "什么是RAG？",
+          "output": "根据工具执行结果，RAG 是 Retrieval-Augmented Generation，即检索增强生成，通过外部知识检索增强大模型回答。",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_018",
+      "task_type": "rag_qa",
+      "query": "Agent是什么？",
+      "expected_tool": "search_tool",
+      "actual_tools": [
+        "search_tool"
+      ],
+      "final_answer": "根据工具执行结果，Agent 是具备规划、工具调用、记忆和执行能力的大模型应用系统。",
+      "latency_ms": 3,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "Agent是什么？",
+          "output": "根据用户问题选择工具：search_tool",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "Agent是什么？",
+          "output": "Agent 是具备规划、工具调用、记忆和执行能力的大模型应用系统。",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "Agent是什么？",
+          "output": "根据工具执行结果，Agent 是具备规划、工具调用、记忆和执行能力的大模型应用系统。",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_019",
+      "task_type": "rag_qa",
+      "query": "LangGraph适合做什么？",
+      "expected_tool": "search_tool",
+      "actual_tools": [
+        "search_tool"
+      ],
+      "final_answer": "根据工具执行结果，LangGraph 是用于构建有状态、多步骤 Agent 工作流的框架。",
+      "latency_ms": 1,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "LangGraph适合做什么？",
+          "output": "根据用户问题选择工具：search_tool",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "LangGraph适合做什么？",
+          "output": "LangGraph 是用于构建有状态、多步骤 Agent 工作流的框架。",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "LangGraph适合做什么？",
+          "output": "根据工具执行结果，LangGraph 是用于构建有状态、多步骤 Agent 工作流的框架。",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_020",
+      "task_type": "rag_qa",
+      "query": "LoRA是什么？",
+      "expected_tool": "search_tool",
+      "actual_tools": [
+        "search_tool"
+      ],
+      "final_answer": "根据工具执行结果，LoRA 是一种参数高效微调方法，通过低秩矩阵近似权重更新。",
+      "latency_ms": 1,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "LoRA是什么？",
+          "output": "根据用户问题选择工具：search_tool",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "LoRA是什么？",
+          "output": "LoRA 是一种参数高效微调方法，通过低秩矩阵近似权重更新。",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "LoRA是什么？",
+          "output": "根据工具执行结果，LoRA 是一种参数高效微调方法，通过低秩矩阵近似权重更新。",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_021",
+      "task_type": "tool_calling",
+      "query": "查询北京今天的天气",
+      "expected_tool": "weather_tool",
+      "actual_tools": [
+        "weather_tool"
+      ],
+      "final_answer": "根据工具执行结果，北京今天晴，气温20-28℃。",
+      "latency_ms": 1,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "查询北京今天的天气",
+          "output": "根据用户问题选择工具：weather_tool",
+          "tool_name": "weather_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "查询北京今天的天气",
+          "output": "北京今天晴，气温20-28℃。",
+          "tool_name": "weather_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "查询北京今天的天气",
+          "output": "根据工具执行结果，北京今天晴，气温20-28℃。",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_022",
+      "task_type": "tool_calling",
+      "query": "查询上海今天的天气",
+      "expected_tool": "weather_tool",
+      "actual_tools": [
+        "weather_tool"
+      ],
+      "final_answer": "根据工具执行结果，上海今天多云，气温22-29℃。",
+      "latency_ms": 2,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "查询上海今天的天气",
+          "output": "根据用户问题选择工具：weather_tool",
+          "tool_name": "weather_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "查询上海今天的天气",
+          "output": "上海今天多云，气温22-29℃。",
+          "tool_name": "weather_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "查询上海今天的天气",
+          "output": "根据工具执行结果，上海今天多云，气温22-29℃。",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_023",
+      "task_type": "tool_calling",
+      "query": "查询深圳今天的天气",
+      "expected_tool": "weather_tool",
+      "actual_tools": [
+        "weather_tool"
+      ],
+      "final_answer": "根据工具执行结果，深圳今天有阵雨，气温25-31℃。",
+      "latency_ms": 2,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "查询深圳今天的天气",
+          "output": "根据用户问题选择工具：weather_tool",
+          "tool_name": "weather_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "查询深圳今天的天气",
+          "output": "深圳今天有阵雨，气温25-31℃。",
+          "tool_name": "weather_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "查询深圳今天的天气",
+          "output": "根据工具执行结果，深圳今天有阵雨，气温25-31℃。",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_024",
+      "task_type": "calculator",
+      "query": "计算 128 * 36 的结果",
+      "expected_tool": "calculator_tool",
+      "actual_tools": [
+        "calculator_tool"
+      ],
+      "final_answer": "根据工具执行结果，4608",
+      "latency_ms": 1,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "计算 128 * 36 的结果",
+          "output": "根据用户问题选择工具：calculator_tool",
+          "tool_name": "calculator_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "计算 128 * 36 的结果",
+          "output": "4608",
+          "tool_name": "calculator_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "计算 128 * 36 的结果",
+          "output": "根据工具执行结果，4608",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_025",
+      "task_type": "calculator",
+      "query": "计算 100 + 250 的结果",
+      "expected_tool": "calculator_tool",
+      "actual_tools": [
+        "calculator_tool"
+      ],
+      "final_answer": "根据工具执行结果，350",
+      "latency_ms": 1,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "计算 100 + 250 的结果",
+          "output": "根据用户问题选择工具：calculator_tool",
+          "tool_name": "calculator_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "计算 100 + 250 的结果",
+          "output": "350",
+          "tool_name": "calculator_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "计算 100 + 250 的结果",
+          "output": "根据工具执行结果，350",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_026",
+      "task_type": "calculator",
+      "query": "计算 81 / 9 的结果",
+      "expected_tool": "calculator_tool",
+      "actual_tools": [
+        "calculator_tool"
+      ],
+      "final_answer": "根据工具执行结果，9.0",
+      "latency_ms": 2,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "计算 81 / 9 的结果",
+          "output": "根据用户问题选择工具：calculator_tool",
+          "tool_name": "calculator_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "计算 81 / 9 的结果",
+          "output": "9.0",
+          "tool_name": "calculator_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "计算 81 / 9 的结果",
+          "output": "根据工具执行结果，9.0",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_027",
+      "task_type": "rag_qa",
+      "query": "什么是RAG？",
+      "expected_tool": "search_tool",
+      "actual_tools": [
+        "search_tool"
+      ],
+      "final_answer": "根据工具执行结果，RAG 是 Retrieval-Augmented Generation，即检索增强生成，通过外部知识检索增强大模型回答。",
+      "latency_ms": 1,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "什么是RAG？",
+          "output": "根据用户问题选择工具：search_tool",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "什么是RAG？",
+          "output": "RAG 是 Retrieval-Augmented Generation，即检索增强生成，通过外部知识检索增强大模型回答。",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "什么是RAG？",
+          "output": "根据工具执行结果，RAG 是 Retrieval-Augmented Generation，即检索增强生成，通过外部知识检索增强大模型回答。",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_028",
+      "task_type": "rag_qa",
+      "query": "Agent是什么？",
+      "expected_tool": "search_tool",
+      "actual_tools": [
+        "search_tool"
+      ],
+      "final_answer": "根据工具执行结果，Agent 是具备规划、工具调用、记忆和执行能力的大模型应用系统。",
+      "latency_ms": 2,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "Agent是什么？",
+          "output": "根据用户问题选择工具：search_tool",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "Agent是什么？",
+          "output": "Agent 是具备规划、工具调用、记忆和执行能力的大模型应用系统。",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "Agent是什么？",
+          "output": "根据工具执行结果，Agent 是具备规划、工具调用、记忆和执行能力的大模型应用系统。",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_029",
+      "task_type": "rag_qa",
+      "query": "LangGraph适合做什么？",
+      "expected_tool": "search_tool",
+      "actual_tools": [
+        "search_tool"
+      ],
+      "final_answer": "根据工具执行结果，LangGraph 是用于构建有状态、多步骤 Agent 工作流的框架。",
+      "latency_ms": 2,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "LangGraph适合做什么？",
+          "output": "根据用户问题选择工具：search_tool",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "LangGraph适合做什么？",
+          "output": "LangGraph 是用于构建有状态、多步骤 Agent 工作流的框架。",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "LangGraph适合做什么？",
+          "output": "根据工具执行结果，LangGraph 是用于构建有状态、多步骤 Agent 工作流的框架。",
+          "tool_name": null
+        }
+      ]
+    },
+    {
+      "case_id": "case_030",
+      "task_type": "rag_qa",
+      "query": "LoRA是什么？",
+      "expected_tool": "search_tool",
+      "actual_tools": [
+        "search_tool"
+      ],
+      "final_answer": "根据工具执行结果，LoRA 是一种参数高效微调方法，通过低秩矩阵近似权重更新。",
+      "latency_ms": 1,
+      "tool_accuracy": 1.0,
+      "keyword_success": true,
+      "judge_score": null,
+      "success": true,
+      "trace": [
+        {
+          "step_index": 1,
+          "node_name": "planner",
+          "input": "LoRA是什么？",
+          "output": "根据用户问题选择工具：search_tool",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 2,
+          "node_name": "tool_executor",
+          "input": "LoRA是什么？",
+          "output": "LoRA 是一种参数高效微调方法，通过低秩矩阵近似权重更新。",
+          "tool_name": "search_tool"
+        },
+        {
+          "step_index": 3,
+          "node_name": "answer",
+          "input": "LoRA是什么？",
+          "output": "根据工具执行结果，LoRA 是一种参数高效微调方法，通过低秩矩阵近似权重更新。",
+          "tool_name": null
+        }
+      ]
+    }
+  ]
+}
