@@ -1,0 +1,5160 @@
+{
+  "generated_at": "2026-06-10T14:22:14.599770Z",
+  "trials_per_case": 3,
+  "case_count": 60,
+  "available_graders": [
+    "exact_match",
+    "keyword_match",
+    "numeric_tolerance",
+    "llm_judge",
+    "efficiency",
+    "tool_accuracy"
+  ],
+  "overall": {
+    "cases": 60,
+    "trials_total": 180,
+    "successes_total": 0,
+    "mean_pass_rate": 0.0,
+    "pass_at_k_rate": 0.0
+  },
+  "by_source": {
+    "gsm8k": {
+      "cases": 30,
+      "trials_total": 90,
+      "successes_total": 0,
+      "mean_pass_rate": 0.0,
+      "variance": 0.0,
+      "pass_at_k_rate": 0.0
+    },
+    "math23k": {
+      "cases": 30,
+      "trials_total": 90,
+      "successes_total": 0,
+      "mean_pass_rate": 0.0,
+      "variance": 0.0,
+      "pass_at_k_rate": 0.0
+    }
+  },
+  "by_task_type": {
+    "calculator": {
+      "cases": 60,
+      "trials_total": 180,
+      "successes_total": 0,
+      "mean_pass_rate": 0.0,
+      "variance": 0.0,
+      "pass_at_k_rate": 0.0
+    }
+  },
+  "by_difficulty": {
+    "medium": {
+      "cases": 60,
+      "trials_total": 180,
+      "successes_total": 0,
+      "mean_pass_rate": 0.0,
+      "variance": 0.0,
+      "pass_at_k_rate": 0.0
+    }
+  },
+  "cases": [
+    {
+      "task_id": "gsm8k_001",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，RAG 是 Retrieval-Augmented Generation，即检索增强生成，通过外部知识检索增强大模型回答。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，RAG 是 Retrieval-Augmented Generation，即检索增强生成，通过外部知识检索增强大模型回答。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，RAG 是 Retrieval-Augmented Generation，即检索增强生成，通过外部知识检索增强大模型回答。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_002",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，RAG 是 Retrieval-Augmented Generation，即检索增强生成，通过外部知识检索增强大模型回答。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，RAG 是 Retrieval-Augmented Generation，即检索增强生成，通过外部知识检索增强大模型回答。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，RAG 是 Retrieval-Augmented Generation，即检索增强生成，通过外部知识检索增强大模型回答。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_003",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 1.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0294,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.02941176470588236,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid syntax (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.02941176470588236,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid syntax (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.02941176470588236,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid syntax (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_004",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_005",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.9,
+      "tool_accuracy_mean": 1.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0067,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.00666666666666671,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid syntax (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.00666666666666671,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid syntax (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.00666666666666671,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid syntax (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_006",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_007",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_008",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_009",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_010",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 3.0,
+      "latency_p95_ms": 3.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 4.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_011",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 1.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0083,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.008333333333333304,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid syntax (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.008333333333333304,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid syntax (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.008333333333333304,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid syntax (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_012",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_013",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 3.0,
+      "latency_p95_ms": 3.0,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_014",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，RAG 是 Retrieval-Augmented Generation，即检索增强生成，通过外部知识检索增强大模型回答。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，RAG 是 Retrieval-Augmented Generation，即检索增强生成，通过外部知识检索增强大模型回答。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，RAG 是 Retrieval-Augmented Generation，即检索增强生成，通过外部知识检索增强大模型回答。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_015",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_016",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_017",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_018",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_019",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 1.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0002,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.00024999999999997247,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid syntax (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.00024999999999997247,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid syntax (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.00024999999999997247,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid syntax (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_020",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_021",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 3.0,
+      "latency_p95_ms": 3.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 4.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_022",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 1.0,
+      "latency_p95_ms": 1.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_023",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_024",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 1.0,
+      "latency_p95_ms": 1.9,
+      "tool_accuracy_mean": 1.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0556,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 0.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.05555555555555558,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid syntax (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.05555555555555558,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid syntax (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.05555555555555558,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid syntax (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_025",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_026",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_027",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_028",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_029",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.9,
+      "tool_accuracy_mean": 1.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0556,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.05555555555555558,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：unterminated string literal (detected at line 1) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.05555555555555558,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：unterminated string literal (detected at line 1) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.05555555555555558,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：unterminated string literal (detected at line 1) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "gsm8k_030",
+      "task_type": "calculator",
+      "source": "gsm8k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_001",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 3.0,
+      "latency_p95_ms": 3.0,
+      "tool_accuracy_mean": 1.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.005,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0050000000000000044,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0050000000000000044,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0050000000000000044,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_002",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 1.0,
+      "latency_p95_ms": 1.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_003",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_004",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 1.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.8889,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.8888888888888888,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.8888888888888888,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.8888888888888888,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_005",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_006",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_007",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 1.0,
+      "latency_p95_ms": 1.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_008",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 1.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0095,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.00952380952380949,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.00952380952380949,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.00952380952380949,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_009",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 3.0,
+      "latency_p95_ms": 3.9,
+      "tool_accuracy_mean": 1.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0002,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 4.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0001666666666666483,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0001666666666666483,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0001666666666666483,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_010",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_011",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_012",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 1.0,
+      "latency_p95_ms": 1.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_013",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 3.0,
+      "latency_p95_ms": 3.0,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_014",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_015",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_016",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 1.0,
+      "latency_p95_ms": 2.8,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_017",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 3.0,
+      "latency_p95_ms": 3.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 4.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_018",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_019",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_020",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_021",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_022",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.9,
+      "tool_accuracy_mean": 1.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.3333,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.33333333333333337,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '．' (U+FF0E) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.33333333333333337,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '．' (U+FF0E) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.33333333333333337,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '．' (U+FF0E) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_023",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.0,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_024",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_025",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 3.0,
+      "latency_p95_ms": 3.0,
+      "tool_accuracy_mean": 1.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0714,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0714285714285714,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0714285714285714,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0714285714285714,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_026",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.9,
+      "tool_accuracy_mean": 0.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 0.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.0,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，未检索到相关内容。",
+          "actual_tools": [
+            "search_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_027",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 3.0,
+      "latency_p95_ms": 3.9,
+      "tool_accuracy_mean": 1.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0095,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 4.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.00952380952380949,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.00952380952380949,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.00952380952380949,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_028",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 2.0,
+      "latency_p95_ms": 2.9,
+      "tool_accuracy_mean": 1.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0062,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.006249999999999978,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.006249999999999978,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.006249999999999978,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_029",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 3.0,
+      "latency_p95_ms": 3.9,
+      "tool_accuracy_mean": 1.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0493,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 4.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.049261083743842415,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 2.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.049261083743842415,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.049261083743842415,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        }
+      ]
+    },
+    {
+      "task_id": "math23k_030",
+      "task_type": "calculator",
+      "source": "math23k",
+      "difficulty": "medium",
+      "trials": 3,
+      "successes": 0,
+      "pass_rate": 0.0,
+      "pass_at_k": false,
+      "ci_low": 0.0,
+      "ci_high": 0.5615,
+      "latency_p50_ms": 3.0,
+      "latency_p95_ms": 3.9,
+      "tool_accuracy_mean": 1.0,
+      "grader_scores_mean": {
+        "efficiency": 0.5,
+        "exact_match": 0.0,
+        "keyword_match": 0.0,
+        "llm_judge": 0.0,
+        "numeric_tolerance": 0.0167,
+        "tool_accuracy": 0.0
+      },
+      "trials_detail": [
+        {
+          "trial_index": 1,
+          "success": false,
+          "latency_ms": 1.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.01666666666666672,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 2,
+          "success": false,
+          "latency_ms": 4.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.01666666666666672,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        },
+        {
+          "trial_index": 3,
+          "success": false,
+          "latency_ms": 3.0,
+          "tool_accuracy": 1.0,
+          "grader_scores": {
+            "exact_match": 0.0,
+            "keyword_match": 0.0,
+            "numeric_tolerance": 0.01666666666666672,
+            "llm_judge": 0.0,
+            "llm_judge_error": "'Field' object has no attribute 'score'",
+            "efficiency": 0.5,
+            "tool_accuracy": 0.0
+          },
+          "final_answer": "根据工具执行结果，计算失败：invalid character '，' (U+FF0C) (<unknown>, line 1)",
+          "actual_tools": [
+            "calculator_tool"
+          ],
+          "error": ""
+        }
+      ]
+    }
+  ]
+}

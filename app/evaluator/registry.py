@@ -25,7 +25,7 @@ from __future__ import annotations
 import math
 import re
 from dataclasses import dataclass, field
-from typing import Any, Callable, ClassVar
+from typing import Any, Callable, ClassVar, Optional
 
 
 # ---- Registry core --------------------------------------------------------------
@@ -146,13 +146,19 @@ class NumericToleranceGrader(Grader):
 
 
 @register("llm_judge")
+@dataclass
 class LLMJudgeGrader(Grader):
     """
     Placeholder. In a real deployment this would call OpenAI / Qwen / DeepSeek with
     a rubric prompt. For now it falls back to KeywordMatchGrader so the registry
     still produces a meaningful score through the full pipeline.
     """
-    fallback: Grader = field(default=None)  # type: ignore[assignment]
+    # NOTE: must use `Optional[...]` and a sentinel default. If we annotate as
+    # `Grader` and default to None, dataclass treats the class itself as a default
+    # factory candidate and you end up with self.fallback being a Field descriptor.
+    # Also: this subclass needs its own @dataclass so the new `fallback` field gets
+    # a proper __init__ entry and __post_init__ is called.
+    fallback: Optional[Grader] = None
 
     def __post_init__(self) -> None:
         if self.fallback is None:
