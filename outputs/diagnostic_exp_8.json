@@ -1,0 +1,134 @@
+{
+  "generated_at": "2026-06-10T14:02:11.312160Z",
+  "experiment": {
+    "id": 8,
+    "name": "diagnostic_20260610_140210",
+    "prompt_version": "v1",
+    "model_name": "mock-agent"
+  },
+  "overall": {
+    "total_cases": 60,
+    "success_count": 0,
+    "success_rate": 0.0,
+    "avg_latency_ms": 1.95,
+    "avg_tool_accuracy": 0.2667
+  },
+  "by_source": {
+    "gsm8k": {
+      "count": 30,
+      "pass": 0,
+      "fail": 30,
+      "pass_rate": 0.0,
+      "avg_latency_ms": 2.13,
+      "avg_tool_accuracy": 0.2
+    },
+    "math23k": {
+      "count": 30,
+      "pass": 0,
+      "fail": 30,
+      "pass_rate": 0.0,
+      "avg_latency_ms": 1.77,
+      "avg_tool_accuracy": 0.3333
+    }
+  },
+  "by_task_type": {
+    "calculator": {
+      "count": 60,
+      "pass": 0,
+      "fail": 60,
+      "pass_rate": 0.0,
+      "avg_latency_ms": 1.95,
+      "avg_tool_accuracy": 0.2667
+    }
+  },
+  "by_source_task_type": {
+    "gsm8k/calculator": {
+      "count": 30,
+      "pass": 0,
+      "fail": 30,
+      "pass_rate": 0.0,
+      "avg_latency_ms": 2.13,
+      "avg_tool_accuracy": 0.2
+    },
+    "math23k/calculator": {
+      "count": 30,
+      "pass": 0,
+      "fail": 30,
+      "pass_rate": 0.0,
+      "avg_latency_ms": 1.77,
+      "avg_tool_accuracy": 0.3333
+    }
+  },
+  "failure_modes_total": {
+    "routing_mismatch": 44,
+    "calculator_parse_fail": 16
+  },
+  "failure_modes_by_source": {
+    "gsm8k": {
+      "routing_mismatch": 24,
+      "calculator_parse_fail": 6
+    },
+    "math23k": {
+      "calculator_parse_fail": 10,
+      "routing_mismatch": 20
+    }
+  },
+  "failure_modes_by_task_type": {
+    "calculator": {
+      "routing_mismatch": 44,
+      "calculator_parse_fail": 16
+    }
+  },
+  "routing_distribution_by_source": {
+    "gsm8k": {
+      "search_tool": 24,
+      "calculator_tool": 6
+    },
+    "math23k": {
+      "calculator_tool": 10,
+      "search_tool": 20
+    }
+  },
+  "samples_by_failure_mode": {
+    "routing_mismatch": [
+      {
+        "case_id": "gsm8k_001",
+        "query": "Millie decides to open a lemonade stand. She spends $18 to buy enough supplies to make 3 pitchers of",
+        "expected_tool": "calculator_tool",
+        "actual_tools": [
+          "search_tool"
+        ],
+        "final_answer": "根据工具执行结果，RAG 是 Retrieval-Augmented Generation，即检索增强生成，通过外部知识检索增强大模型回答。"
+      },
+      {
+        "case_id": "gsm8k_002",
+        "query": "Solo has to read 4 pages from his Science textbook, 20 pages from his Social Studies textbook, 7 pag",
+        "expected_tool": "calculator_tool",
+        "actual_tools": [
+          "search_tool"
+        ],
+        "final_answer": "根据工具执行结果，RAG 是 Retrieval-Augmented Generation，即检索增强生成，通过外部知识检索增强大模型回答。"
+      }
+    ],
+    "calculator_parse_fail": [
+      {
+        "case_id": "gsm8k_003",
+        "query": "Every day Charisma meditates for 15 minutes when she first wakes up and again before she goes to sle",
+        "expected_tool": "calculator_tool",
+        "actual_tools": [
+          "calculator_tool"
+        ],
+        "final_answer": "根据工具执行结果，计算失败：invalid syntax (<unknown>, line 1)"
+      },
+      {
+        "case_id": "gsm8k_005",
+        "query": "Lillian's garden doesn't have any bird feeders in it so she wants to add some. She builds 3 and buys",
+        "expected_tool": "calculator_tool",
+        "actual_tools": [
+          "calculator_tool"
+        ],
+        "final_answer": "根据工具执行结果，计算失败：invalid syntax (<unknown>, line 1)"
+      }
+    ]
+  }
+}
