@@ -1,0 +1,30 @@
+{"id": "case_001", "task_type": "tool_calling", "query": "查询北京今天的天气", "expected_tool": "weather_tool", "expected_answer_keywords": ["北京", "晴"]}
+{"id": "case_002", "task_type": "tool_calling", "query": "查询上海今天的天气", "expected_tool": "weather_tool", "expected_answer_keywords": ["上海", "多云"]}
+{"id": "case_003", "task_type": "tool_calling", "query": "查询深圳今天的天气", "expected_tool": "weather_tool", "expected_answer_keywords": ["深圳", "阵雨"]}
+{"id": "case_004", "task_type": "calculator", "query": "计算 128 * 36 的结果", "expected_tool": "calculator_tool", "expected_answer_keywords": ["4608"]}
+{"id": "case_005", "task_type": "calculator", "query": "计算 100 + 250 的结果", "expected_tool": "calculator_tool", "expected_answer_keywords": ["350"]}
+{"id": "case_006", "task_type": "calculator", "query": "计算 81 / 9 的结果", "expected_tool": "calculator_tool", "expected_answer_keywords": ["9"]}
+{"id": "case_007", "task_type": "rag_qa", "query": "什么是RAG？", "expected_tool": "search_tool", "expected_answer_keywords": ["Retrieval", "检索增强"]}
+{"id": "case_008", "task_type": "rag_qa", "query": "Agent是什么？", "expected_tool": "search_tool", "expected_answer_keywords": ["规划", "工具调用"]}
+{"id": "case_009", "task_type": "rag_qa", "query": "LangGraph适合做什么？", "expected_tool": "search_tool", "expected_answer_keywords": ["Agent", "工作流"]}
+{"id": "case_010", "task_type": "rag_qa", "query": "LoRA是什么？", "expected_tool": "search_tool", "expected_answer_keywords": ["参数高效", "低秩"]}
+{"id": "case_011", "task_type": "tool_calling", "query": "查询北京今天的天气", "expected_tool": "weather_tool", "expected_answer_keywords": ["北京", "晴"]}
+{"id": "case_012", "task_type": "tool_calling", "query": "查询上海今天的天气", "expected_tool": "weather_tool", "expected_answer_keywords": ["上海", "多云"]}
+{"id": "case_013", "task_type": "tool_calling", "query": "查询深圳今天的天气", "expected_tool": "weather_tool", "expected_answer_keywords": ["深圳", "阵雨"]}
+{"id": "case_014", "task_type": "calculator", "query": "计算 128 * 36 的结果", "expected_tool": "calculator_tool", "expected_answer_keywords": ["4608"]}
+{"id": "case_015", "task_type": "calculator", "query": "计算 100 + 250 的结果", "expected_tool": "calculator_tool", "expected_answer_keywords": ["350"]}
+{"id": "case_016", "task_type": "calculator", "query": "计算 81 / 9 的结果", "expected_tool": "calculator_tool", "expected_answer_keywords": ["9"]}
+{"id": "case_017", "task_type": "rag_qa", "query": "什么是RAG？", "expected_tool": "search_tool", "expected_answer_keywords": ["Retrieval", "检索增强"]}
+{"id": "case_018", "task_type": "rag_qa", "query": "Agent是什么？", "expected_tool": "search_tool", "expected_answer_keywords": ["规划", "工具调用"]}
+{"id": "case_019", "task_type": "rag_qa", "query": "LangGraph适合做什么？", "expected_tool": "search_tool", "expected_answer_keywords": ["Agent", "工作流"]}
+{"id": "case_020", "task_type": "rag_qa", "query": "LoRA是什么？", "expected_tool": "search_tool", "expected_answer_keywords": ["参数高效", "低秩"]}
+{"id": "case_021", "task_type": "tool_calling", "query": "查询北京今天的天气", "expected_tool": "weather_tool", "expected_answer_keywords": ["北京", "晴"]}
+{"id": "case_022", "task_type": "tool_calling", "query": "查询上海今天的天气", "expected_tool": "weather_tool", "expected_answer_keywords": ["上海", "多云"]}
+{"id": "case_023", "task_type": "tool_calling", "query": "查询深圳今天的天气", "expected_tool": "weather_tool", "expected_answer_keywords": ["深圳", "阵雨"]}
+{"id": "case_024", "task_type": "calculator", "query": "计算 128 * 36 的结果", "expected_tool": "calculator_tool", "expected_answer_keywords": ["4608"]}
+{"id": "case_025", "task_type": "calculator", "query": "计算 100 + 250 的结果", "expected_tool": "calculator_tool", "expected_answer_keywords": ["350"]}
+{"id": "case_026", "task_type": "calculator", "query": "计算 81 / 9 的结果", "expected_tool": "calculator_tool", "expected_answer_keywords": ["9"]}
+{"id": "case_027", "task_type": "rag_qa", "query": "什么是RAG？", "expected_tool": "search_tool", "expected_answer_keywords": ["Retrieval", "检索增强"]}
+{"id": "case_028", "task_type": "rag_qa", "query": "Agent是什么？", "expected_tool": "search_tool", "expected_answer_keywords": ["规划", "工具调用"]}
+{"id": "case_029", "task_type": "rag_qa", "query": "LangGraph适合做什么？", "expected_tool": "search_tool", "expected_answer_keywords": ["Agent", "工作流"]}
+{"id": "case_030", "task_type": "rag_qa", "query": "LoRA是什么？", "expected_tool": "search_tool", "expected_answer_keywords": ["参数高效", "低秩"]}
